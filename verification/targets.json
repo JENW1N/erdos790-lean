@@ -1,0 +1,89 @@
+{
+ "schema_version": 1,
+ "project": {
+  "root": "<isolated clean checkout of 44a5c97f>",
+  "repository": "https://github.com/JENW1N/erdos790-lean",
+  "commit": "44a5c97f66dd67cef224af0f51d04e0875e87202",
+  "toolchain": "leanprover/lean4:v4.33.0"
+ },
+ "problems": [
+  {
+   "id": "erdos-790",
+   "source": "https://www.erdosproblems.com/790",
+   "requirements": [
+    {
+     "id": "q1",
+     "description": "Is it true that l(n) n^{-1/2} -> infinity? (answer: yes)",
+     "targets": [
+      "part_i",
+      "bridge"
+     ],
+     "coverage": "full",
+     "evidence": "Erdos790.erdos_790_part_i proves Tendsto (l n / sqrt n) atTop atTop; AuditBridge.intended restates it with inline definitions."
+    },
+    {
+     "id": "q2",
+     "description": "Is it true that l(n) < n^{1-c} for some c > 0? (answer: no)",
+     "targets": [
+      "part_ii",
+      "bridge"
+     ],
+     "coverage": "full",
+     "evidence": "Erdos790.erdos_790_part_ii proves the negation of (exists c > 0, eventually l n < n^(1-c)); AuditBridge.intended restates it inline."
+    },
+    {
+     "id": "estimate",
+     "description": "Estimate l(n): Korsky lower bound c n/(log n)^2 and l(n) = n^{1+o(1)}",
+     "targets": [
+      "korsky",
+      "exponent"
+     ],
+     "coverage": "full",
+     "evidence": "Erdos790.korsky: exists c > 0, forall n >= 2, c n/(log n)^2 <= l n; Erdos790.erdos_790_exponent: log l(n)/log n -> 1."
+    }
+   ]
+  }
+ ],
+ "targets": [
+  {
+   "id": "korsky",
+   "problem": "erdos-790",
+   "role": "theorem",
+   "module": "Erdos790.Main",
+   "source": "Erdos790/Main.lean",
+   "declaration": "Erdos790.korsky"
+  },
+  {
+   "id": "part_i",
+   "problem": "erdos-790",
+   "role": "theorem",
+   "module": "Erdos790.Main",
+   "source": "Erdos790/Main.lean",
+   "declaration": "Erdos790.erdos_790_part_i"
+  },
+  {
+   "id": "part_ii",
+   "problem": "erdos-790",
+   "role": "theorem",
+   "module": "Erdos790.Main",
+   "source": "Erdos790/Main.lean",
+   "declaration": "Erdos790.erdos_790_part_ii"
+  },
+  {
+   "id": "exponent",
+   "problem": "erdos-790",
+   "role": "theorem",
+   "module": "Erdos790.Main",
+   "source": "Erdos790/Main.lean",
+   "declaration": "Erdos790.erdos_790_exponent"
+  },
+  {
+   "id": "bridge",
+   "problem": "erdos-790",
+   "role": "bridge",
+   "module": "AuditBridge",
+   "source": "AuditBridge.lean",
+   "declaration": "AuditBridge.intended"
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+'Erdos790.korsky' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos790.erdos_790_part_i' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos790.erdos_790_part_ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos790.erdos_790_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]

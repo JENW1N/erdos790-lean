@@ -1,0 +1,509 @@
+{
+  "scope": "target_checks_only",
+  "semantic_verdict": "not_determined",
+  "preflight": {
+    "ready_for_target_checks": true,
+    "issues": [],
+    "head": "44a5c97f66dd67cef224af0f51d04e0875e87202",
+    "git_status": "?? AuditBridge.lean",
+    "toolchain_file": "leanprover/lean4:v4.33.0",
+    "file_sha256": {
+      "AuditBridge.lean": "994cf3f72510b1e705886ff15b38f50251a5e5bf1313ad1da6b714fb8d93e819",
+      "Erdos790/Main.lean": "7d26f92e496c1430b7fe0a1689638cc306eef3846d0553b5b4f846661c740a0c",
+      "lake-manifest.json": "da7dd5630e0f7987868f28145aed0e63cb40562eb12af228cd1823ebc817e9b1",
+      "lakefile.lean": null,
+      "lakefile.toml": "d9addf882a8df9f9ce5891aeb9a4373dffb4ed8d02f41daaf33991132b631fb1",
+      "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    },
+    "manual_preconditions": [
+      "isolation and resource limits established",
+      "clean source build and trusted cache provenance recorded",
+      "actual dependency SHAs match fixed evidence",
+      "tool binaries are trusted and match the pinned toolchain",
+      "all untracked inputs and module/source mappings reviewed"
+    ],
+    "checker_compatibility": "not_probed; inspect pinned checker separately"
+  },
+  "commands": [
+    {
+      "argv": [
+        "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+        "--version"
+      ],
+      "cwd": "<scratch>/cleancheck",
+      "log": "<scratch>/audit2-run/version-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 0.079,
+      "log_sha256": "91f4400b78be82a22d826a45a18f024b3121af765a09e1ab07dc76e4f1606676"
+    },
+    {
+      "argv": [
+        "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "<scratch>/cleancheck",
+      "log": "<scratch>/audit2-run/version-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 1.872,
+      "log_sha256": "328b78e438553509f9760b1f71680473cb11be77077f0ab10ac92cd3e01d37db"
+    },
+    {
+      "argv": [
+        "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+        "build",
+        "+Erdos790.Main"
+      ],
+      "cwd": "<scratch>/cleancheck",
+      "log": "<scratch>/audit2-run/0000-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 7.274,
+      "log_sha256": "c70d992059e0525ca478652088339f1e2712976946a22f3e99de0d4fe60dcd27"
+    },
+    {
+      "argv": [
+        "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+        "env",
+        "lean",
+        "<scratch>/cleancheck/Erdos790/Main.lean"
+      ],
+      "cwd": "<scratch>/cleancheck",
+      "log": "<scratch>/audit2-run/0000-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 13.571,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+        "env",
+        "lean",
+        "<scratch>/audit2-run/Audit0000.lean"
+      ],
+      "cwd": "<scratch>/cleancheck",
+      "log": "<scratch>/audit2-run/0000-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 8.565,
+      "log_sha256": "0e96fc0a7680dde223ea4cea95d3c25f771d688a0eed16ca52caffe64aa93343"
+    },
+    {
+      "argv": [
+        "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+        "build",
+        "+Erdos790.Main"
+      ],
+      "cwd": "<scratch>/cleancheck",
+      "log": "<scratch>/audit2-run/0001-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 9.005,
+      "log_sha256": "c70d992059e0525ca478652088339f1e2712976946a22f3e99de0d4fe60dcd27"
+    },
+    {
+      "argv": [
+        "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+        "env",
+        "lean",
+        "<scratch>/cleancheck/Erdos790/Main.lean"
+      ],
+      "cwd": "<scratch>/cleancheck",
+      "log": "<scratch>/audit2-run/0001-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 20.581,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+        "env",
+        "lean",
+        "<scratch>/audit2-run/Audit0001.lean"
+      ],
+      "cwd": "<scratch>/cleancheck",
+      "log": "<scratch>/audit2-run/0001-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 14.641,
+      "log_sha256": "64560089cb1632586d80e51667200af394dcf0e77f0bda8371f26aff8e7d7677"
+    },
+    {
+      "argv": [
+        "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+        "build",
+        "+Erdos790.Main"
+      ],
+      "cwd": "<scratch>/cleancheck",
+      "log": "<scratch>/audit2-run/0002-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 8.203,
+      "log_sha256": "c70d992059e0525ca478652088339f1e2712976946a22f3e99de0d4fe60dcd27"
+    },
+    {
+      "argv": [
+        "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+        "env",
+        "lean",
+        "<scratch>/cleancheck/Erdos790/Main.lean"
+      ],
+      "cwd": "<scratch>/cleancheck",
+      "log": "<scratch>/audit2-run/0002-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 17.639,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+        "env",
+        "lean",
+        "<scratch>/audit2-run/Audit0002.lean"
+      ],
+      "cwd": "<scratch>/cleancheck",
+      "log": "<scratch>/audit2-run/0002-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 27.494,
+      "log_sha256": "ae96d6abe1142708caa7dad4be38b87b6df60bad12a27ec6fb3a62bc2cf9a8e5"
+    },
+    {
+      "argv": [
+        "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+        "build",
+        "+Erdos790.Main"
+      ],
+      "cwd": "<scratch>/cleancheck",
+      "log": "<scratch>/audit2-run/0003-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 11.588,
+      "log_sha256": "c70d992059e0525ca478652088339f1e2712976946a22f3e99de0d4fe60dcd27"
+    },
+    {
+      "argv": [
+        "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+        "env",
+        "lean",
+        "<scratch>/cleancheck/Erdos790/Main.lean"
+      ],
+      "cwd": "<scratch>/cleancheck",
+      "log": "<scratch>/audit2-run/0003-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 37.821,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+        "env",
+        "lean",
+        "<scratch>/audit2-run/Audit0003.lean"
+      ],
+      "cwd": "<scratch>/cleancheck",
+      "log": "<scratch>/audit2-run/0003-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 21.3,
+      "log_sha256": "cc24c0aa6542049024d46fa10441fb7c5fe8d1d9d704e96324d96e3d2621947c"
+    },
+    {
+      "argv": [
+        "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+        "build",
+        "+AuditBridge"
+      ],
+      "cwd": "<scratch>/cleancheck",
+      "log": "<scratch>/audit2-run/0004-0.log",
+      "exit_code": 1,
+      "status": "command_failed",
+      "seconds": 3.328,
+      "log_sha256": "91189407a78137221673c1750ec3be000f1271d3e815a76739d06a193fcb1a3b"
+    }
+  ],
+  "targets": [
+    {
+      "id": "korsky",
+      "declaration": "Erdos790.korsky",
+      "audit_file": "<scratch>/audit2-run/Audit0000.lean",
+      "audit_sha256": "ed023d704886fc646fd604fdc29b89d2fd82f285b8e9aef59fd65fab8dbee0d8",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+            "build",
+            "+Erdos790.Main"
+          ],
+          "cwd": "<scratch>/cleancheck",
+          "log": "<scratch>/audit2-run/0000-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 7.274,
+          "log_sha256": "c70d992059e0525ca478652088339f1e2712976946a22f3e99de0d4fe60dcd27"
+        },
+        {
+          "argv": [
+            "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+            "env",
+            "lean",
+            "<scratch>/cleancheck/Erdos790/Main.lean"
+          ],
+          "cwd": "<scratch>/cleancheck",
+          "log": "<scratch>/audit2-run/0000-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 13.571,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+            "env",
+            "lean",
+            "<scratch>/audit2-run/Audit0000.lean"
+          ],
+          "cwd": "<scratch>/cleancheck",
+          "log": "<scratch>/audit2-run/0000-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 8.565,
+          "log_sha256": "0e96fc0a7680dde223ea4cea95d3c25f771d688a0eed16ca52caffe64aa93343"
+        }
+      ]
+    },
+    {
+      "id": "part_i",
+      "declaration": "Erdos790.erdos_790_part_i",
+      "audit_file": "<scratch>/audit2-run/Audit0001.lean",
+      "audit_sha256": "f193262cd4381a7119a714429685a91659db13fa0ac996a6e861eedf682693d0",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+            "build",
+            "+Erdos790.Main"
+          ],
+          "cwd": "<scratch>/cleancheck",
+          "log": "<scratch>/audit2-run/0001-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 9.005,
+          "log_sha256": "c70d992059e0525ca478652088339f1e2712976946a22f3e99de0d4fe60dcd27"
+        },
+        {
+          "argv": [
+            "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+            "env",
+            "lean",
+            "<scratch>/cleancheck/Erdos790/Main.lean"
+          ],
+          "cwd": "<scratch>/cleancheck",
+          "log": "<scratch>/audit2-run/0001-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 20.581,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+            "env",
+            "lean",
+            "<scratch>/audit2-run/Audit0001.lean"
+          ],
+          "cwd": "<scratch>/cleancheck",
+          "log": "<scratch>/audit2-run/0001-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 14.641,
+          "log_sha256": "64560089cb1632586d80e51667200af394dcf0e77f0bda8371f26aff8e7d7677"
+        }
+      ]
+    },
+    {
+      "id": "part_ii",
+      "declaration": "Erdos790.erdos_790_part_ii",
+      "audit_file": "<scratch>/audit2-run/Audit0002.lean",
+      "audit_sha256": "0fb88655e5478030a6acf278b97335963c2a95b1426160893a400ff619a7601c",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+            "build",
+            "+Erdos790.Main"
+          ],
+          "cwd": "<scratch>/cleancheck",
+          "log": "<scratch>/audit2-run/0002-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 8.203,
+          "log_sha256": "c70d992059e0525ca478652088339f1e2712976946a22f3e99de0d4fe60dcd27"
+        },
+        {
+          "argv": [
+            "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+            "env",
+            "lean",
+            "<scratch>/cleancheck/Erdos790/Main.lean"
+          ],
+          "cwd": "<scratch>/cleancheck",
+          "log": "<scratch>/audit2-run/0002-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 17.639,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+            "env",
+            "lean",
+            "<scratch>/audit2-run/Audit0002.lean"
+          ],
+          "cwd": "<scratch>/cleancheck",
+          "log": "<scratch>/audit2-run/0002-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 27.494,
+          "log_sha256": "ae96d6abe1142708caa7dad4be38b87b6df60bad12a27ec6fb3a62bc2cf9a8e5"
+        }
+      ]
+    },
+    {
+      "id": "exponent",
+      "declaration": "Erdos790.erdos_790_exponent",
+      "audit_file": "<scratch>/audit2-run/Audit0003.lean",
+      "audit_sha256": "599480cb713c970b3617f2e638c366d8012382fbbdeb65cd0b2b44dd854e0728",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+            "build",
+            "+Erdos790.Main"
+          ],
+          "cwd": "<scratch>/cleancheck",
+          "log": "<scratch>/audit2-run/0003-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 11.588,
+          "log_sha256": "c70d992059e0525ca478652088339f1e2712976946a22f3e99de0d4fe60dcd27"
+        },
+        {
+          "argv": [
+            "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+            "env",
+            "lean",
+            "<scratch>/cleancheck/Erdos790/Main.lean"
+          ],
+          "cwd": "<scratch>/cleancheck",
+          "log": "<scratch>/audit2-run/0003-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 37.821,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+            "env",
+            "lean",
+            "<scratch>/audit2-run/Audit0003.lean"
+          ],
+          "cwd": "<scratch>/cleancheck",
+          "log": "<scratch>/audit2-run/0003-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 21.3,
+          "log_sha256": "cc24c0aa6542049024d46fa10441fb7c5fe8d1d9d704e96324d96e3d2621947c"
+        }
+      ]
+    },
+    {
+      "id": "bridge",
+      "declaration": "AuditBridge.intended",
+      "audit_file": "<scratch>/audit2-run/Audit0004.lean",
+      "audit_sha256": "e43e56978f06efe763a3c919aee596ba1dc3e64a9907850e400128cac942b9c7",
+      "status": "incomplete",
+      "reason": "command_failed",
+      "commands": [
+        {
+          "argv": [
+            "/Users/jenwin/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake",
+            "build",
+            "+AuditBridge"
+          ],
+          "cwd": "<scratch>/cleancheck",
+          "log": "<scratch>/audit2-run/0004-0.log",
+          "exit_code": 1,
+          "status": "command_failed",
+          "seconds": 3.328,
+          "log_sha256": "91189407a78137221673c1750ec3be000f1271d3e815a76739d06a193fcb1a3b"
+        }
+      ]
+    }
+  ],
+  "mechanical_status": "incomplete",
+  "tool_versions": [
+    "Lake version 5.0.0-src+d8b1897 (Lean version 4.33.0)\n",
+    "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)\n"
+  ],
+  "after": {
+    "ready_for_target_checks": true,
+    "issues": [],
+    "head": "44a5c97f66dd67cef224af0f51d04e0875e87202",
+    "git_status": "?? AuditBridge.lean",
+    "toolchain_file": "leanprover/lean4:v4.33.0",
+    "file_sha256": {
+      "AuditBridge.lean": "994cf3f72510b1e705886ff15b38f50251a5e5bf1313ad1da6b714fb8d93e819",
+      "Erdos790/Main.lean": "7d26f92e496c1430b7fe0a1689638cc306eef3846d0553b5b4f846661c740a0c",
+      "lake-manifest.json": "da7dd5630e0f7987868f28145aed0e63cb40562eb12af228cd1823ebc817e9b1",
+      "lakefile.lean": null,
+      "lakefile.toml": "d9addf882a8df9f9ce5891aeb9a4373dffb4ed8d02f41daaf33991132b631fb1",
+      "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    },
+    "manual_preconditions": [
+      "isolation and resource limits established",
+      "clean source build and trusted cache provenance recorded",
+      "actual dependency SHAs match fixed evidence",
+      "tool binaries are trusted and match the pinned toolchain",
+      "all untracked inputs and module/source mappings reviewed"
+    ],
+    "checker_compatibility": "not_probed; inspect pinned checker separately"
+  },
+  "inputs_stable": true,
+  "manifest_sha256": "ea5642c05225f32a346a62278318e7b5fcdd9ff3aa54fdbc380fac57a493fe60",
+  "script_sha256": "5db45dddcb4d588bc27e7c7161fbca5cedaa3e73e1c40843d21f5a214323cd07",
+  "exit_code": 2
+}
